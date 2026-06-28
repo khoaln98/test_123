@@ -1,0 +1,8 @@
+swagger: '2.0'
+info:
+  title: XSS test
+  description: |
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><script> alert(document.domain)</script>"></form>
+    <img src=x>
+    <details ontoggle=alert(1) open>
+    <a href=//google.com> click here</a>
