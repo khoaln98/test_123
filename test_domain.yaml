@@ -3,6 +3,7 @@ info:
   title: XSS test
   description: |
     <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><script> alert(document.domain)</script>"></form>
-    <img src=x>
+    <img src=x onload=alert(1)>
     <details ontoggle=alert(1) open>
+    <a href=javascript:alert(1)> click here</a>
     <a href=//google.com> click here</a>
